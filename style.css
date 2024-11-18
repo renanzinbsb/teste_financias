@@ -6,23 +6,43 @@
   outline: none;
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+:root {
+  --text-dark: #171717;
+  --text-light: #e5e5e5;
+  --white: #ffffff;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  background-image: url("walpae.jpg");
+}
+.fundo{
+  display: flex;
+  align-items: center;
+ 
+}
 main {
-  max-width: 550px;
+  max-width: 650px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px solid var(--white);
+  border-radius: 1.5rem;
+  margin: 1rem;
+  backdrop-filter: blur(8px);
+}
+.descri{
+  text-align: center;
+  padding: 10%;
+  color: #e5e5e5;
 }
 
 .resume {
   display: flex;
-  padding: 10px 0;
+  padding: 100px 0;
   gap: 40px;
   width: 100%;
   justify-content: center;
@@ -32,7 +52,7 @@ main {
 .resume > div {
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 5px #ccc;
+  box-shadow: 0px 0px 5px #ffffff;
   border-radius: 10px;
   padding: 10px;
   width: 150px;
@@ -53,7 +73,7 @@ main {
 }
 
 .newItem > button {
-  background-color: #2C73D2;
+  background-color: #e20f0f;
   color: white;
   border: none;
   padding: 0 15px;
